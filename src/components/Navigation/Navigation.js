@@ -14,11 +14,11 @@ function Navigation({ logOn, props }) {
       <Nav
         variant="tabs"
         defaultActiveKey="/home"
-        className="justify-content-end"
+        className="justify-content-between"
       >
         <Nav.Item>
           <Link to={routes.home} className="nav-link">
-            Home Page
+            Главная
           </Link>
         </Nav.Item>
         {logOn ? <UserMenu /> : <PublicMenu />}

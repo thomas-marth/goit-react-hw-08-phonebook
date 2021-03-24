@@ -1,22 +1,35 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getUserInfo } from "../../redux/contacts/contactsSelectors";
-import { Jumbotron, Container } from "react-bootstrap";
-import { Spinner } from "react-bootstrap";
+import { Jumbotron, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import routes from "../../routes";
 
 function UserPage({ user }) {
   return (
     <Jumbotron fluid>
       <Container>
+        <h1>Телефонная книга</h1>
+        <p></p>
         {user ? (
-          <h1>Hello {user.name} on your Phonebook</h1>
+          <p>
+            {user.name}, добро пожаловать в приложение Телефонная книга, которое
+            позволит Вам легко и удобно управлять вашим персональным списком
+            контактов.
+          </p>
         ) : (
           <Spinner animation="border" />
         )}
         <p>
-          Welcome to the application for storing personal contacts. Go to the
-          contacts tab to work with your phone book.
+          Успейте воспользоваться бесплатным trial-периодом в течении 14-ти
+          дней!
+        </p>
+        <p>
+          <Link to={routes.contacts}>
+            <Button variant="primary">Добавить контакты</Button>
+          </Link>
         </p>
       </Container>
     </Jumbotron>

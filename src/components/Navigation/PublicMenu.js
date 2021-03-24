@@ -13,12 +13,12 @@ function PublicMenu({ user }) {
     >
       <Nav.Item>
         <Link to={routes.register} className="nav-link">
-          Registration
+          Регистрация
         </Link>
       </Nav.Item>
       <Nav.Item>
         <Link to={routes.login} className="nav-link">
-          Login
+          Вход
         </Link>
       </Nav.Item>
     </Nav>

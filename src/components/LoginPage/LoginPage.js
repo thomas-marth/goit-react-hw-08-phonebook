@@ -38,13 +38,13 @@ class LoginPage extends Component {
         <br />
         <Row className="justify-content-md-center">
           <Col xs lg="5">
-            <h2>Login</h2>
+            <h2>Вход</h2>
             <Form>
               <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>Email</Form.Label>
                 <Form.Control
                   type="email"
-                  placeholder="Enter email"
+                  placeholder="Введите email"
                   suggested="email"
                   name="email"
                   value={email}
@@ -52,14 +52,14 @@ class LoginPage extends Component {
                   onChange={this.handleChange}
                 />
                 <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
+                  Мы никому не передаем адрес вашей электронной почты.
                 </Form.Text>
               </Form.Group>
               <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
+                <Form.Label>Пароль</Form.Label>
                 <Form.Control
                   type="password"
-                  placeholder="Password"
+                  placeholder="Введите пароль"
                   suggested="password"
                   name="password"
                   value={password}
@@ -70,7 +70,7 @@ class LoginPage extends Component {
               <Form.Group controlId="formBasicCheckbox">
                 <Form.Check
                   type="checkbox"
-                  label="Remember me"
+                  label="Запомнить меня"
                   onChange={this.handleCheked}
                 />
               </Form.Group>
@@ -79,7 +79,7 @@ class LoginPage extends Component {
                 type="button"
                 onClick={this.handleSubmit}
               >
-                Submit
+                Войти
               </Button>
             </Form>
           </Col>

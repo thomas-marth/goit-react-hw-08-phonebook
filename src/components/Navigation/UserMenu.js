@@ -16,22 +16,22 @@ function UserMenu({ user }) {
         <Nav
           variant="tabs"
           defaultActiveKey="/home"
-          className="justify-content-end"
+          className="justify-content-center"
         >
           <Nav.Link eventKey="disabled" disabled>
-            Hello {user.name}
+            Привет {user.name}
           </Nav.Link>
           <Nav.Link eventKey="disabled" disabled>
             Email: {user.email}
           </Nav.Link>
           <Nav.Item>
-            <Link to={routes.logout} className="nav-link">
-              Log out
+            <Link to={routes.contacts} className="nav-link">
+              Мои контакты
             </Link>
           </Nav.Item>
           <Nav.Item>
-            <Link to={routes.contacts} className="nav-link">
-              Contacts
+            <Link to={routes.logout} className="nav-link">
+              Выйти
             </Link>
           </Nav.Item>
         </Nav>

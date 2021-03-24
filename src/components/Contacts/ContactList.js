@@ -37,7 +37,9 @@ class ContactList extends Component {
         <AddContact />
         <FindContact />
         <br />
-        <h2 className="row row-cols-5 justify-content-center">Contacts list</h2>
+        <h2 className="row row-cols-5 justify-content-center">
+          Список контактов
+        </h2>
         {filteredContacts.length !== 0 && (
           <CardDeck className="row row-cols-md-5 justify-content-center">
             {filteredContacts.map((contact) => (

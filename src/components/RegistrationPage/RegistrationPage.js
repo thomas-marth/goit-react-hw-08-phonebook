@@ -61,64 +61,64 @@ class RegistrationPage extends Component {
         <br />
         <Row className="justify-content-md-center">
           <Col xs lg="5">
-            <h2>Registration</h2>
+            <h2>Регистрация</h2>
             <Form type="form">
               <Form.Group controlId="firstName">
-                <Form.Label>First Name</Form.Label>
+                <Form.Label>Имя</Form.Label>
                 <Form.Control
                   type="firstName"
                   name="firstName"
                   value={firstName}
-                  placeholder="First Name"
+                  placeholder="Имя"
                   onChange={this.handleChange}
                 />
               </Form.Group>
               <Form.Group controlId="secondName">
-                <Form.Label>Second Name</Form.Label>
+                <Form.Label>Фамилия</Form.Label>
                 <Form.Control
                   type="secondName"
                   name="secondName"
                   value={secondName}
-                  placeholder="Second Name"
+                  placeholder="Фамилия"
                   onChange={this.handleChange}
                 />
               </Form.Group>
               <Form.Group controlId="email">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>Email</Form.Label>
                 <Form.Control
                   suggested="email"
                   autoComplete="email"
                   type="email"
                   name="email"
                   value={email}
-                  placeholder="Enter email"
+                  placeholder="Введите email"
                   onChange={this.handleChange}
                 />
                 <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
+                  Мы никому не передаем адрес вашей электронной почты.
                 </Form.Text>
               </Form.Group>
               <Form.Group controlId="password">
-                <Form.Label>Password</Form.Label>
+                <Form.Label>Пароль</Form.Label>
                 <Form.Control
                   suggested="password"
                   autoComplete="new-password"
                   type="password"
                   name="password"
                   value={password}
-                  placeholder="Password"
+                  placeholder="Ведите пароль"
                   onChange={this.handleChange}
                 />
               </Form.Group>
               <Form.Group controlId="confirmPassword">
-                <Form.Label>Confirm Password</Form.Label>
+                <Form.Label>Подтверждение пароля</Form.Label>
                 <Form.Control
                   suggested="confirmPassword"
                   autoComplete="confirmPassword"
                   type="password"
                   name="confirmPassword"
                   value={confirmPassword}
-                  placeholder="Confirm Password"
+                  placeholder="Подтвердите пароль"
                   onChange={this.handleChange}
                 />
               </Form.Group>
@@ -127,7 +127,7 @@ class RegistrationPage extends Component {
                 type="button"
                 onClick={this.handleSubmit}
               >
-                Submit
+                Регистрация
               </Button>
             </Form>
           </Col>

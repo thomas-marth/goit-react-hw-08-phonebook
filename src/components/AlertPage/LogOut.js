@@ -16,19 +16,19 @@ class LogOut extends Component {
     return (
       <Modal.Dialog>
         <Modal.Header>
-          <Modal.Title>Confirmation to log out</Modal.Title>
+          <Modal.Title>Подтверждение выхода</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
-          <p>Do you want to log out?</p>
+          <p>Вы уверены, что хотите выйти?</p>
         </Modal.Body>
 
         <Modal.Footer>
           <Button variant="secondary" type="button" onClick={this.handleCencel}>
-            Cancel
+            Отмена
           </Button>
           <Button variant="primary" type="button" onClick={this.handleSubmit}>
-            Log out
+            Выход
           </Button>
         </Modal.Footer>
       </Modal.Dialog>

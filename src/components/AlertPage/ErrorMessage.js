@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function ErrorMessage({ error }) {
   return (
     <Alert variant="danger">
-      <Alert.Heading>Sоmething wrong!</Alert.Heading>
+      <Alert.Heading>Упс, что-то сломалось!</Alert.Heading>
       <p>{error}</p>
     </Alert>
   );
